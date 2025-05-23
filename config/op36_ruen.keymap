@@ -3,6 +3,7 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/pointing.h>
 
 &mt {
     quick-tap-ms = <200>;
@@ -54,16 +55,9 @@
             layers = <1>;
         };
 
-        cmben {
-            bindings = <&layer_en>;
-            key-positions = <2 3>;
-            layers = <1>;
-        };
-
-        cmbru {
-            bindings = <&layer_ru>;
-            key-positions = <2 3>;
-            layers = <0>;
+        ru_slash {
+            bindings = <&kp RU_SLASH>;
+            key-positions = <13 14>;
         };
     };
 
@@ -168,10 +162,10 @@
 
         mouse {
             bindings = <
-  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-                          &trans  &trans  &trans    &trans  &trans  &trans
+  &trans          &msc SCRL_UP     &msc SCRL_DOWN  &trans           &trans                    &trans  &mkp LCLK  &mkp RCLK  &trans  &trans
+  &mmv MOVE_LEFT  &mmv MOVE_DOWN   &mmv MOVE_UP    &mmv MOVE_RIGHT  &trans                    &trans  &trans     &trans     &trans  &trans
+  &trans          &msc SCRL_RIGHT  &msc SCRL_LEFT  &trans           &trans                    &trans  &trans     &trans     &trans  &trans
+                                                   &trans           &trans  &trans    &trans  &trans  &trans
             >;
         };
 
