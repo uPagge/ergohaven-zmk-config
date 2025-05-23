@@ -336,10 +336,10 @@
 
         sym_ru {
             bindings = <
-  &en GRAVE  &en LT          &none             &en GT           &kp PIPE                            &en CARET  &en LEFT_BRACE    &kp UNDER  &en RIGHT_BRACE    &en DLLR
-  &kp LGUI   &hml LALT LPAR  &hml LSHFT MINUS  &hml LCTRL RPAR  &kp RU_BACKSLASH                    &kp PRCNT  &en LEFT_BRACKET  &none      &en RIGHT_BRACKET  &none
-  &none      &none           &none             &none            &en AMPS                            &none      &en PIPE          &none      &none              &en TILDE
-                                               &trans           &none             &trans    &trans  &none      &trans
+  &en TILDE  &en LT          &none                        &en GT           &kp PIPE                            &en CARET  &en LEFT_BRACE    &kp UNDER     &en RIGHT_BRACE    &en DLLR
+  &kp LGUI   &hml LALT LPAR  &hml LSHFT RU_DOUBLE_QUOTES  &hml LCTRL RPAR  &kp RU_BACKSLASH                    &none      &en LEFT_BRACKET  &kp RU_PRCNT  &en RIGHT_BRACKET  &none
+  &en GRAVE  &kp RU_NUMERO   &none                        &none            &en AMPS                            &none      &en PIPE          &none         &none              &en TILDE
+                                                          &trans           &none             &trans    &trans  &none      &trans
             >;
         };
 
