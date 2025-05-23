@@ -12,17 +12,17 @@
 };
 
 &mmv {
-    trigger-period-ms = <5>;
-    time-to-max-speed-ms = <200>;
-    acceleration-exponent = <2>;
+    trigger-period-ms = <4>;
+    time-to-max-speed-ms = <100>;
+    acceleration-exponent = <3>;
     delay-ms = <0>;
 };
 
 &msc {
-    trigger-period-ms = <10>;
+    trigger-period-ms = <6>;
     delay-ms = <0>;
-    time-to-max-speed-ms = <200>;
-    acceleration-exponent = <2>;
+    time-to-max-speed-ms = <150>;
+    acceleration-exponent = <3>;
 };
 
 / {
@@ -59,7 +59,7 @@
 
         kha {
             bindings = <&kp RU_CYRILLIC_HA>;
-            key-positions = <6 7>;
+            key-positions = <22 23>;
             layers = <1>;
         };
 
@@ -317,7 +317,7 @@
 
         nav {
             bindings = <
-  &trans              &trans              &trans            &trans               &trans                    &kp PLUS    &kp NUMBER_7         &kp NUMBER_8         &kp NUMBER_9        &trans
+  &trans              &trans              &trans            &trans               &trans                    &kp PLUS    &kp NUMBER_7         &kp NUMBER_8         &kp NUMBER_9        &kp EQUAL
   &kp LEFT_ARROW      &kp DOWN_ARROW      &kp UP_ARROW      &kp RIGHT_ARROW      &trans                    &kp RU_DOT  &hmr RCTRL NUMBER_4  &hmr RSHFT NUMBER_5  &hmr LALT NUMBER_6  &hmr RGUI NUMBER_0
   &kp LA(LEFT_ARROW)  &kp LA(DOWN_ARROW)  &kp LA(UP_ARROW)  &kp LA(RIGHT_ARROW)  &trans                    &kp MINUS   &kp NUMBER_1         &kp NUMBER_2         &kp NUMBER_3        &trans
                                                             &trans               &mo 6   &trans    &trans  &mo 5       &trans
@@ -335,10 +335,10 @@
 
         mouse {
             bindings = <
-  &trans          &msc SCRL_UP     &msc SCRL_DOWN  &trans           &trans                    &trans  &mkp LCLK  &mkp RCLK  &trans  &trans
-  &mmv MOVE_LEFT  &mmv MOVE_DOWN   &mmv MOVE_UP    &mmv MOVE_RIGHT  &trans                    &trans  &trans     &trans     &trans  &trans
-  &trans          &msc SCRL_RIGHT  &msc SCRL_LEFT  &trans           &trans                    &trans  &trans     &trans     &trans  &trans
-                                                   &trans           &trans  &trans    &trans  &trans  &trans
+  &kp LC(LS(TAB))         &msc SCRL_UP     &msc SCRL_DOWN  &kp LC(TAB)              &kp LC(LEFT_ARROW)                     &trans  &mkp LCLK          &mkp RCLK        &trans         &trans
+  &mmv MOVE_LEFT          &mmv MOVE_DOWN   &mmv MOVE_UP    &mmv MOVE_RIGHT          &kp LC(RIGHT_ARROW)                    &trans  &kp RIGHT_CONTROL  &kp RIGHT_SHIFT  &kp RIGHT_ALT  &kp RIGHT_GUI
+  &kp LG(LA(LEFT_ARROW))  &msc SCRL_RIGHT  &msc SCRL_LEFT  &kp LG(LA(RIGHT_ARROW))  &trans                                 &trans  &trans             &trans           &trans         &trans
+                                                           &trans                   &trans               &trans    &trans  &trans  &trans
             >;
         };
 
