@@ -306,7 +306,7 @@
   &kp Q        &kp W        &kp E         &kp R         &kp T                                     &kp Y            &kp U         &kp I         &kp O        &kp P
   &hml LGUI A  &hml LALT S  &hml LSHFT D  &hml LCTRL F  &kp G                                     &kp H            &hmr RCTRL J  &hmr RSHFT K  &hmr LALT L  &hmr RGUI SEMICOLON
   &kp Z        &kp X        &kp C         &kp V         &kp B                                     &kp N            &kp M         &kp COMMA     &kp DOT      &kp SQT
-                                          &lt 8 ESC     &lt 7 SPACE  &lang_ru 2 0    &lt 9 ENTER  &lt 4 BACKSPACE  &lt 2 TAB
+                                          &lt 7 ESC     &lt 6 SPACE  &lang_ru 2 0    &lt 8 ENTER  &lt 4 BACKSPACE  &lt 2 TAB
             >;
         };
 
@@ -315,7 +315,7 @@
   &kp RU_CYRILLIC_SHORT_I   &kp RU_CYRILLIC_TSE         &kp RU_CYRILLIC_U          &kp RU_CYRILLIC_KA        &kp RU_CYRILLIC_IE                               &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE        &kp RU_CYRILLIC_SHA        &kp RU_CYRILLIC_SHCHA     &kp RU_CYRILLIC_ZE
   &hml LGUI RU_CYRILLIC_EF  &hml LALT RU_CYRILLIC_YERU  &hml LSHFT RU_CYRILLIC_VE  &hml LCTRL RU_CYRILLIC_A  &kp RU_CYRILLIC_PE                               &kp RU_CYRILLIC_ER  &hmr RCTRL RU_CYRILLIC_O   &hmr RSHFT RU_CYRILLIC_EL  &hmr LALT RU_CYRILLIC_DE  &hmr RGUI RU_CYRILLIC_ZHE
   &kp RU_CYRILLIC_YA        &kp RU_CYRILLIC_CHE         &kp RU_CYRILLIC_ES         &kp RU_CYRILLIC_EM        &kp RU_CYRILLIC_I                                &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE         &kp RU_CYRILLIC_YU        &kp RU_CYRILLIC_E
-                                                                                   &lt 8 ESC                 &lt 7 SPACE         &lang_en 3 0    &lt 9 ENTER  &lt 4 BACKSPACE     &lt 3 TAB
+                                                                                   &lt 7 ESC                 &lt 6 SPACE         &lang_en 3 0    &lt 8 ENTER  &lt 4 BACKSPACE     &lt 3 TAB
             >;
         };
 
@@ -342,16 +342,7 @@
   &trans              &trans              &trans            &trans               &trans                    &kp PLUS    &kp NUMBER_7         &kp NUMBER_8         &kp NUMBER_9        &kp EQUAL
   &kp LEFT_ARROW      &kp DOWN_ARROW      &kp UP_ARROW      &kp RIGHT_ARROW      &trans                    &kp RU_DOT  &hmr RCTRL NUMBER_4  &hmr RSHFT NUMBER_5  &hmr LALT NUMBER_6  &hmr RGUI NUMBER_0
   &kp LA(LEFT_ARROW)  &kp LA(DOWN_ARROW)  &kp LA(UP_ARROW)  &kp LA(RIGHT_ARROW)  &trans                    &kp MINUS   &kp NUMBER_1         &kp NUMBER_2         &kp NUMBER_3        &trans
-                                                            &trans               &mo 6   &trans    &trans  &mo 5       &trans
-            >;
-        };
-
-        adj {
-            bindings = <
-  &bootloader  &kp F1        &kp F2         &kp F3         &kp F4                     &bt BT_SEL 0  &bt BT_SEL 1         &bt BT_SEL 2       &bt BT_SEL 3        &bt BT_CLR
-  &kp LGUI     &hml LALT F5  &hml LSHFT F6  &hml LCTRL F7  &kp F8                     &out OUT_BLE  &hmr RCTRL C_VOL_DN  &hmr RSHFT C_MUTE  &hmr LALT C_VOL_UP  &kp RGUI
-  &none        &kp F9        &kp F10        &kp F11        &kp F12                    &out OUT_USB  &kp C_PREV           &kp C_PP           &kp C_NEXT          &studio_unlock
-                                            &trans         &trans   &trans    &trans  &trans        &trans
+                                                            &trans               &mo 5   &trans    &trans  &none       &trans
             >;
         };
 
@@ -391,21 +382,12 @@
             >;
         };
 
-        sym_ru_back {
+        adj {
             bindings = <
-  &en TILDE               &en LT          &kp EQUAL         &en GT           &en GRAVE                    &en CARET  &en LBKT  &kp UNDER           &en RBKT    &en DLLR
-  &hml LGUI RU_BACKSLASH  &hml LALT LPAR  &hml LSHFT MINUS  &hml LCTRL RPAR  &kp PLUS                     &kp PRCNT  &en LBRC  &hmr RSHFT RU_SEMI  &en RBRC    &hmr RGUI EXCL
-  &en HASH                &kp STAR        &kp RU_COLON      &kp RU_FSLH      &en AMPS                     &en AT     &en PIPE  &kp RU_COMMA        &kp RU_DOT  &kp RU_QMARK
-                                                            &trans           &none      &trans    &trans  &none      &trans
-            >;
-        };
-
-        sym_en_back {
-            bindings = <
-  &kp TILDE       &kp LT          &kp EQUAL         &kp GT           &kp GRAVE                    &kp CARET  &kp LBKT         &kp UNDER        &kp RBKT        &kp DLLR
-  &hml LGUI BSLH  &hml LALT LPAR  &hml LSHFT MINUS  &hml LCTRL RPAR  &kp PLUS                     &kp PRCNT  &hmr RCTRL LBRC  &hmr RSHFT SEMI  &hmr LALT RBRC  &hmr RGUI EXCL
-  &kp HASH        &kp STAR        &kp COLON         &kp FSLH         &kp AMPS                     &kp AT     &kp PIPE         &kp COMMA        &kp DOT         &kp QMARK
-                                                    &trans           &none      &trans    &trans  &none      &trans
+  &bootloader  &kp F1        &kp F2         &kp F3         &kp F4                     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2       &bt BT_SEL 3  &bt BT_CLR
+  &kp LGUI     &hml LALT F5  &hml LSHFT F6  &hml LCTRL F7  &kp F8                     &out OUT_BLE  &kp RCTRL     &hmr RSHFT C_MUTE  &kp LALT      &kp RGUI
+  &none        &kp F9        &kp F10        &kp F11        &kp F12                    &out OUT_USB  &none         &none              &none         &studio_unlock
+                                            &trans         &trans   &trans    &trans  &trans        &trans
             >;
         };
     };
