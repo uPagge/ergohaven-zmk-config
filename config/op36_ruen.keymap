@@ -129,13 +129,13 @@
         };
 
         sym_com_ru {
-            bindings = <&kp RU_COMMA>;
+            bindings = <&com_and_space_ru>;
             key-positions = <16 17>;
             layers = <1>;
         };
 
         sym_com_en {
-            bindings = <&kp COMMA>;
+            bindings = <&com_and_space_en>;
             key-positions = <16 17>;
             layers = <0>;
         };
@@ -150,6 +150,46 @@
             bindings = <&kp RU_PLUS>;
             key-positions = <2 3>;
             layers = <1>;
+        };
+
+        sym_und {
+            bindings = <&kp UNDER>;
+            key-positions = <21 22>;
+        };
+
+        sym_colon_en {
+            bindings = <&kp COLON>;
+            key-positions = <6 7>;
+            layers = <0>;
+        };
+
+        sym_colon_ru {
+            bindings = <&kp RU_COLON>;
+            key-positions = <6 7>;
+            layers = <1>;
+        };
+
+        sym_semi_en {
+            bindings = <&kp SEMI>;
+            key-positions = <7 8>;
+            layers = <0>;
+        };
+
+        sym_semi_ru {
+            bindings = <&kp RU_SEMI>;
+            key-positions = <7 8>;
+            layers = <1>;
+        };
+
+        sym_tilde {
+            bindings = <&kp TILDE>;
+            key-positions = <20 21>;
+            layers = <0>;
+        };
+
+        mouse_pointer {
+            bindings = <&mouse_pointer>;
+            key-positions = <10 11 12 13>;
         };
     };
 
@@ -192,6 +232,28 @@
                 <&macro_wait_time 10>;
 
             label = "EN";
+        };
+
+        com_and_space_en: com_and_space {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp COMMA &kp SPACE>;
+            label = "COM_AND_SPACE";
+        };
+
+        com_and_space_ru: com_and_space_ru {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RU_COMMA &kp SPACE>;
+            label = "COM_AND_SPACE_RU";
+        };
+
+        mouse_pointer: mouse_pointer {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&layer_en>, <&macro_wait_time 10>, <&kp LS(LG(SPACE))>;
+
+            label = "MOUSE_POINTER";
         };
     };
 
