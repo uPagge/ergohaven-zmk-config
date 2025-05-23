@@ -196,14 +196,14 @@
         to_ru: to_ru {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(LA(F1))>;
+            bindings = <&kp LG(LA(F2))>;
             label = "TO_RU";
         };
 
         to_en: to_en {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LA(LG(F2))>;
+            bindings = <&kp LA(LG(F1))>;
             label = "TO_EN";
         };
 
