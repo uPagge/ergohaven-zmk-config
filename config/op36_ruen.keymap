@@ -293,8 +293,43 @@
         mouse_pointer: mouse_pointer {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&layer_en &kp LS(LG(SPACE))>;
+            bindings = <&layer_en &kp LG(LA(F4))>;
             label = "MOUSE_POINTER";
+        };
+
+        gmail: my_gmail {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&layer_en &kp U &kp P &kp A &kp G &kp G &kp E &kp AT_SIGN &kp G &kp M &kp A &kp I &kp L &kp DOT &kp C &kp O &kp M>;
+            label = "MY_GMAIL";
+        };
+
+        work_mail: my_work_mail {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&layer_en &kp M &kp S &kp T &kp R &kp U &kp C &kp H &kp K &kp O &kp V &kp AT_SIGN &kp T &kp N1 &kp MINUS &kp C &kp O &kp N &kp S &kp U &kp L &kp T &kp I &kp N &kp G &kp DOT &kp R &kp U>;
+            label = "MY_WORK_MAIL";
+        };
+
+        link_dion: link_dion {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&layer_en &kp H &kp T &kp T &kp P &kp S &kp COLON &kp FSLH &kp FSLH &kp D &kp I &kp O &kp N &kp DOT &kp V &kp C &kp FSLH &kp E &kp V &kp E &kp N &kp T &kp FSLH &kp M &kp S &kp T &kp R &kp U &kp C &kp H &kp K &kp O &kp V>;
+            label = "LINK_DION";
+        };
+
+        smile_xd: smile {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&en COLON &en LS(D)>;
+            label = "SMILE";
+        };
+
+        smile_surp: smile_surp {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N0 &en UNDER &en O>;
+            label = "SMILE_SURP";
         };
     };
 
@@ -357,19 +392,19 @@
 
         hot {
             bindings = <
-  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-                          &trans  &trans  &trans    &trans  &trans  &trans
+  &trans  &trans  &trans  &trans          &trans                    &trans  &trans                    &trans  &trans  &kp LC(LG(Q))
+  &trans  &trans  &trans  &kp LG(LA(F5))  &trans                    &trans  &kp LG(LS(LC(NUMBER_4)))  &trans  &trans  &trans
+  &trans  &trans  &trans  &trans          &trans                    &trans  &trans                    &trans  &trans  &trans
+                          &trans          &trans  &trans    &trans  &trans  &trans
             >;
         };
 
         insert {
             bindings = <
-  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-                          &trans  &trans  &trans    &trans  &trans  &trans
+  &link_dion  &trans  &gmail       &work_mail  &trans                    &trans  &trans  &trans  &trans  &trans
+  &trans      &trans  &trans       &trans      &trans                    &trans  &trans  &trans  &trans  &trans
+  &trans      &trans  &smile_surp  &smile_xd   &trans                    &trans  &trans  &trans  &trans  &trans
+                                   &trans      &trans  &trans    &trans  &trans  &trans
             >;
         };
 
