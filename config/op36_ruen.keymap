@@ -55,9 +55,16 @@
             layers = <1>;
         };
 
-        ru_slash {
+        sym_slash_ru {
             bindings = <&kp RU_SLASH>;
             key-positions = <13 14>;
+            layers = <1>;
+        };
+
+        sym_slash_en {
+            bindings = <&kp RU_SLASH>;
+            key-positions = <13 14>;
+            layers = <0>;
         };
     };
 
@@ -144,10 +151,10 @@
 
         nav {
             bindings = <
-  &kp N1         &kp N2    &kp N3     &kp N4     &kp N5                        &kp N6           &kp N7           &kp N8           &kp N9        &kp N0
-  &hml LGUI ESC  &kp LALT  &kp LSHFT  &kp LCTRL  &kp ENTER                     &kp PRINTSCREEN  &hmr RCTRL LEFT  &hmr RSHFT DOWN  &hmr LALT UP  &hmr RGUI RIGHT
-  &layer_en      &kp HOME  &kp INS    &kp END    &kp DELETE                    &kp CAPS         &none            &kp PG_DN        &kp PG_UP     &layer_ru
-                                      &trans     &none       &trans    &trans  &mo 5            &trans
+  &trans              &trans              &trans            &trans               &trans                    &kp PLUS    &kp NUMBER_7         &kp NUMBER_8         &kp NUMBER_9        &trans
+  &kp LEFT_ARROW      &kp DOWN_ARROW      &kp UP_ARROW      &kp RIGHT_ARROW      &trans                    &kp RU_DOT  &hmr RCTRL NUMBER_4  &hmr RSHFT NUMBER_5  &hmr LALT NUMBER_6  &hmr RGUI NUMBER_0
+  &kp LA(LEFT_ARROW)  &kp LA(DOWN_ARROW)  &kp LA(UP_ARROW)  &kp LA(RIGHT_ARROW)  &trans                    &kp MINUS   &kp NUMBER_1         &kp NUMBER_2         &kp NUMBER_3        &trans
+                                                            &trans               &mo 6   &trans    &trans  &mo 5       &trans
             >;
         };
 
