@@ -67,9 +67,10 @@
             layers = <0>;
         };
 
-        sym_dog {
+        sym_sign_en {
             bindings = <&kp AT_SIGN>;
             key-positions = <10 11>;
+            layers = <0>;
         };
 
         sym_tire {
@@ -84,7 +85,7 @@
         };
 
         sym_question_en {
-            bindings = <&kp QMARK>;
+            bindings = <&kp QUESTION>;
             key-positions = <12 13>;
             layers = <0>;
         };
@@ -99,13 +100,14 @@
             key-positions = <22 23>;
         };
 
-        sym_plus {
+        sym_plus_en {
             bindings = <&kp PLUS>;
             key-positions = <2 3>;
+            layers = <0>;
         };
 
         sym_hash {
-            bindings = <&kt HASH>;
+            bindings = <&kp HASH>;
             key-positions = <3 4>;
         };
 
@@ -135,6 +137,18 @@
         sym_com_en {
             bindings = <&kp COMMA>;
             key-positions = <16 17>;
+            layers = <0>;
+        };
+
+        sym_sign_ru {
+            bindings = <&en AT_SIGN>;
+            key-positions = <10 11>;
+            layers = <1>;
+        };
+
+        sym_plus_ru {
+            bindings = <&kp RU_PLUS>;
+            key-positions = <2 3>;
             layers = <1>;
         };
     };
