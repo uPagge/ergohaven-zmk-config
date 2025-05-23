@@ -1,4 +1,4 @@
-#define ZMK_POINTING_DEFAULT_MOVE_VAL 1800  // default: 600
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 2000  // default: 600
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 60    // default: 10
 
 #include "keys_ru.h"
