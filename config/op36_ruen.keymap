@@ -14,13 +14,6 @@
     require-prior-idle-ms = <125>;
 };
 
-&mmv {
-    trigger-period-ms = <8>;
-    delay-ms = <0>;
-    acceleration-exponent = <2>;
-    time-to-max-speed-ms = <400>;
-};
-
 / {
     behaviors {
         hml: home_row_mod_left {
