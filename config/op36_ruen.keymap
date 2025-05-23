@@ -59,7 +59,7 @@
             require-prior-idle-ms = <150>;
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;
-            bindings = <&mo>, <&layer_ru>;
+            bindings = <&mo>, <&lang_en>;
 
             hold-trigger-on-release;
             label = "LANG_EN";
