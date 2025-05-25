@@ -91,7 +91,7 @@
         };
 
         sym_slash_en {
-            bindings = <&kp RU_SLASH>;
+            bindings = <&kp SLASH>;
             key-positions = <13 14>;
             layers = <0>;
         };
