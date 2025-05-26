@@ -203,7 +203,7 @@
         to_ru: to_ru {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(LA(F2))>;
+            bindings = <&kp LA(LG(F2))>;
             label = "TO_RU";
         };
 
