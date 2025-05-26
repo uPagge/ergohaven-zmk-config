@@ -331,18 +331,18 @@
 
         sym_en {
             bindings = <
-  &kp TILDE  &kp LT          &none           &kp GT           &kp PIPE                         &kp CARET  &kp LEFT_BRACE               &kp UNDER        &kp RIGHT_BRACE          &kp DLLR
-  &kp LGUI   &hml LALT LPAR  &hml LSHFT DQT  &hml LCTRL RPAR  &kp BACKSLASH                    &none      &hmr RCTRL LC(LEFT_BRACKET)  &hmr RSHFT SEMI  &hmr LALT RIGHT_BRACKET  &kp RGUI
-  &kp GRAVE  &kp RU_NUMERO   &none           &none            &kp AMPS                         &none      &none                        &none            &none                    &kp TILDE
+  &kp TILDE  &kp LT          &none           &kp GT           &kp PIPE                         &kp CARET  &kp LEFT_BRACE           &kp UNDER        &kp RIGHT_BRACE          &kp DLLR
+  &kp LGUI   &hml LALT LPAR  &hml LSHFT DQT  &hml LCTRL RPAR  &kp BACKSLASH                    &none      &hmr RCTRL LEFT_BRACKET  &hmr RSHFT SEMI  &hmr LALT RIGHT_BRACKET  &kp RGUI
+  &kp GRAVE  &kp RU_NUMERO   &none           &none            &kp AMPS                         &none      &none                    &none            &none                    &kp TILDE
                                              &trans           &none          &trans    &trans  &none      &trans
             >;
         };
 
         sym_ru {
             bindings = <
-  &en TILDE  &en LT          &none                        &en GT           &kp PIPE                            &en CARET  &en LEFT_BRACE                       &kp UNDER                    &en RIGHT_BRACE               &en DLLR
-  &kp LGUI   &hml LALT LPAR  &hml LSHFT RU_DOUBLE_QUOTES  &hml LCTRL RPAR  &kp RU_BACKSLASH                    &none      &hmr RIGHT_CONTROL LS(LEFT_BRACKET)  &hmr RIGHT_SHIFT RU_PERCENT  &hmr RIGHT_ALT RIGHT_BRACKET  &kp RIGHT_GUI
-  &en GRAVE  &kp RU_NUMERO   &none                        &none            &en AMPS                            &none      &none                                &none                        &none                         &en TILDE
+  &en TILDE  &en LT          &none                        &en GT           &kp PIPE                            &en CARET  &en LEFT_BRACE                   &kp UNDER                    &en RIGHT_BRACE               &en DLLR
+  &kp LGUI   &hml LALT LPAR  &hml LSHFT RU_DOUBLE_QUOTES  &hml LCTRL RPAR  &kp RU_BACKSLASH                    &none      &hmr RIGHT_CONTROL LEFT_BRACKET  &hmr RIGHT_SHIFT RU_PERCENT  &hmr RIGHT_ALT RIGHT_BRACKET  &kp RIGHT_GUI
+  &en GRAVE  &kp RU_NUMERO   &none                        &none            &en AMPS                            &none      &none                            &none                        &none                         &en TILDE
                                                           &trans           &none             &trans    &trans  &none      &trans
             >;
         };
