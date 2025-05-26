@@ -349,7 +349,7 @@
 
         nav {
             bindings = <
-  &trans              &trans              &trans            &trans               &trans                    &kp PLUS    &kp NUMBER_7         &kp NUMBER_8         &kp NUMBER_9        &kp EQUAL
+  &kp LG(LEFT_ARROW)  &kp LG(DOWN_ARROW)  &kp LG(UP_ARROW)  &kp LG(RIGHT_ARROW)  &trans                    &kp PLUS    &kp NUMBER_7         &kp NUMBER_8         &kp NUMBER_9        &kp EQUAL
   &kp LEFT_ARROW      &kp DOWN_ARROW      &kp UP_ARROW      &kp RIGHT_ARROW      &trans                    &kp RU_DOT  &hmr RCTRL NUMBER_4  &hmr RSHFT NUMBER_5  &hmr LALT NUMBER_6  &hmr RGUI NUMBER_0
   &kp LA(LEFT_ARROW)  &kp LA(DOWN_ARROW)  &kp LA(UP_ARROW)  &kp LA(RIGHT_ARROW)  &trans                    &kp MINUS   &kp NUMBER_1         &kp NUMBER_2         &kp NUMBER_3        &trans
                                                             &trans               &mo 5   &trans    &trans  &none       &trans
