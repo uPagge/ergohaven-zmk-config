@@ -81,6 +81,24 @@
             hold-trigger-on-release;
             label = "HMR_RU";
         };
+
+        caps_to_en: caps_to_en {
+            compatible = "zmk,behavior-hold-tap";
+            label = "CAPS_TO_EN";
+            bindings = <&mo>, <&caps_to_norman_en>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+        };
+
+        caps_to_ru: caps_to_ru {
+            compatible = "zmk,behavior-hold-tap";
+            label = "CAPS_TO_RU";
+            bindings = <&mo>, <&caps_to_normal_ru>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+        };
     };
 
     combos {
@@ -218,6 +236,18 @@
             key-positions = <3 4>;
             layers = <0>;
         };
+
+        caps_en {
+            bindings = <&to 10>;
+            key-positions = <12 17>;
+            layers = <0>;
+        };
+
+        caps_ru {
+            bindings = <&to 11>;
+            key-positions = <12 17>;
+            layers = <1>;
+        };
     };
 
     macros {
@@ -327,6 +357,20 @@
             bindings = <&en MINUS &en UNDER &en MINUS>;
             label = "SMILE_HM";
         };
+
+        caps_to_norman_en: caps_to_norman_en {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SPACE &to 0>;
+            label = "CAPS_TO_NORMAN_EN";
+        };
+
+        caps_to_normal_ru: caps_to_normal_ru {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SPACE &to 1>;
+            label = "CAPS_TO_NORMAL_RU";
+        };
     };
 
     keymap {
@@ -419,6 +463,24 @@
   &kp LGUI     &hml LALT F5  &hml LSHFT F6  &hml LCTRL F7  &kp F8                     &out OUT_BLE  &kp RCTRL     &hmr RSHFT C_MUTE  &kp LALT      &kp RGUI
   &none        &kp F9        &kp F10        &kp F11        &kp F12                    &out OUT_USB  &none         &none              &none         &studio_unlock
                                             &trans         &trans   &trans    &trans  &trans        &trans
+            >;
+        };
+
+        en_caps {
+            bindings = <
+  &kp LS(Q)        &kp LS(W)        &kp LS(E)         &kp LS(R)         &kp LS(T)                                     &kp LS(Y)        &kp LS(U)         &kp LS(I)         &kp LS(O)        &kp LS(P)
+  &hml LGUI LS(A)  &hml LALT LS(S)  &hml LSHFT LS(D)  &hml LCTRL LS(F)  &kp LS(G)                                     &kp LS(H)        &hmr RCTRL LS(J)  &hmr RSHFT LS(K)  &hmr LALT LS(L)  &hmr RGUI LS(SEMICOLON)
+  &kp LS(Z)        &kp LS(X)        &kp LS(C)         &kp LS(V)         &kp LS(B)                                     &kp LS(N)        &kp LS(M)         &kp COMMA         &kp DOT          &kp SQT
+                                                      &lt 7 ESC         &caps_to_en 6 0  &lang_ru 3 0    &lt 8 ENTER  &lt 4 BACKSPACE  &lt 3 TAB
+            >;
+        };
+
+        ru_caps {
+            bindings = <
+  &kp LS(RU_CYRILLIC_SHORT_I)   &kp LS(RU_CYRILLIC_TSE)         &kp LS(RU_CYRILLIC_U)          &kp LS(RU_CYRILLIC_KA)        &kp LS(RU_CYRILLIC_IE)                               &kp LS(RU_CYRILLIC_EN)  &kp LS(RU_CYRILLIC_GHE)        &kp LS(RU_CYRILLIC_SHA)        &kp LS(RU_CYRILLIC_SHCHA)     &kp LS(RU_CYRILLIC_ZE)
+  &hml LGUI LS(RU_CYRILLIC_EF)  &hml LALT LS(RU_CYRILLIC_YERU)  &hml LSHFT LS(RU_CYRILLIC_VE)  &hml LCTRL LS(RU_CYRILLIC_A)  &kp LS(RU_CYRILLIC_PE)                               &kp LS(RU_CYRILLIC_ER)  &hmr RCTRL LS(RU_CYRILLIC_O)   &hmr RSHFT LS(RU_CYRILLIC_EL)  &hmr LALT LS(RU_CYRILLIC_DE)  &hmr RGUI LS(RU_CYRILLIC_ZHE)
+  &kp LS(RU_CYRILLIC_YA)        &kp LS(RU_CYRILLIC_CHE)         &kp LS(RU_CYRILLIC_ES)         &kp LS(RU_CYRILLIC_EM)        &kp LS(RU_CYRILLIC_I)                                &kp LS(RU_CYRILLIC_TE)  &kp LS(RU_CYRILLIC_SOFT_SIGN)  &kp LS(RU_CYRILLIC_BE)         &kp LS(RU_CYRILLIC_YU)        &kp LS(RU_CYRILLIC_E)
+                                                                                               &lt 7 ESC                     &caps_to_ru 6 0         &lang_en 2 0    &lt 8 ENTER  &lt 4 BACKSPACE         &lt 2 TAB
             >;
         };
     };
