@@ -340,7 +340,7 @@
         smile_xd: smile {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&en COLON &en LS(D)>;
+            bindings = <&en COLON &kp LS(D) &layer_en>;
             label = "SMILE";
         };
 
@@ -361,14 +361,14 @@
         caps_to_norman_en: caps_to_norman_en {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp SPACE &to 0>;
+            bindings = <&kp SPACE &layer_en>;
             label = "CAPS_TO_NORMAN_EN";
         };
 
         caps_to_normal_ru: caps_to_normal_ru {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp SPACE &to 1>;
+            bindings = <&kp SPACE &layer_ru>;
             label = "CAPS_TO_NORMAL_RU";
         };
     };
