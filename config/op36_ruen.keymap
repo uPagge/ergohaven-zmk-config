@@ -383,6 +383,8 @@
   &kp Z        &kp X        &kp C         &kp V         &kp B                                     &kp N            &kp M         &kp COMMA     &kp DOT      &kp SQT
                                           &lt 7 ESC     &lt 6 SPACE  &lang_ru 3 0    &lt 8 ENTER  &lt 4 BACKSPACE  &lt 3 TAB
             >;
+
+            display-name = "Base";
         };
 
         ru {
@@ -401,6 +403,8 @@
   &en GRAVE  &kp RU_NUMERO   &none                        &none            &en AMPS                            &none      &none                               &none                        &none                            &en TILDE
                                                           &trans           &none             &trans    &trans  &none      &trans
             >;
+
+            display-name = "Ru";
         };
 
         sym_en {
@@ -419,6 +423,8 @@
   &kp LA(LEFT_ARROW)  &kp LA(DOWN_ARROW)  &kp LA(UP_ARROW)  &kp LA(RIGHT_ARROW)  &trans                    &kp MINUS   &kp NUMBER_1         &kp NUMBER_2         &kp NUMBER_3        &trans
                                                             &trans               &mo 5   &trans    &trans  &none       &trans
             >;
+
+            display-name = "Symbols";
         };
 
         mouse {
@@ -437,6 +443,8 @@
   &trans  &trans  &trans  &trans          &trans                    &trans  &trans                    &trans  &trans  &trans
                           &trans          &trans  &trans    &trans  &mo 5   &trans
             >;
+
+            display-name = "Symbols";
         };
 
         insert {
@@ -455,6 +463,8 @@
   &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
                           &trans  &trans  &trans    &trans  &trans  &trans
             >;
+
+            display-name = "Navigation";
         };
 
         adj {
@@ -464,6 +474,8 @@
   &none        &kp F9        &kp F10        &kp F11        &kp F12                    &out OUT_USB  &none         &none              &none         &studio_unlock
                                             &trans         &trans   &trans    &trans  &trans        &trans
             >;
+
+            display-name = "Adjust";
         };
 
         en_caps {
